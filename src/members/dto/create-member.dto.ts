@@ -5,8 +5,7 @@ export class CreateMemberDto {
     @IsString()
     name: string;
 
-    @IsString()
-    @IsIn(["M", "F"])
+    @IsIn(["M", "F", null, undefined])
     gender?: string;
 
     @IsNotEmpty()
